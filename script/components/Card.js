@@ -33,6 +33,7 @@ export class Card extends Node {
         this.label.y = Math.floor(this.cover.height / 2.222);
         this.addChild(this.label);
     }
+    
     setValue(value) {
         this.value = value;
         this.sprite.path = "./images/trucxanh" + value + ".jpg";
@@ -40,13 +41,13 @@ export class Card extends Node {
     open() {
         this.cover.elm.style.background = "none";
         this.label.elm.style.display = "none";
-        return this.value;
+        
     }
     close() {
         this.cover.elm.style.background = "orange";
         this.label.elm.style.display = "block";
     }
     hide() {
-        this.elm.hidden;
+        this.elm.hidden = "true";
     }
 }
