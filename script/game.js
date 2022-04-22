@@ -143,7 +143,7 @@ class Game extends Node {
     }
     winGame() {
         if (document.getElementsByTagName("div")[0].childElementCount <= 2 && this.score > 0) {
-            alert('Winner winer chicken diner');
+            alert('Vy xing gái. Hệ hệ hệ');
             this.btnPlaygame.text = 'Play again';
         }
     }
